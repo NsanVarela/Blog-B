@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tags</title>
+
+    <!--**************** CSS ****************-->
+
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/tags.css" />
+
+
+
+    <!--**************** Links ****************-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- MD Bootstrap 4.5.4 -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    
+    <!--**************** /Links ****************-->
+
+</head>
+
+	<body>
+
+
+        <div class="container-fluid display-table">
+            <div class="row display-table-row">
+                <!-- side menu -->
+                <div class="col-md-2 col-sm-1 d-none d-md-block display-table-cell valing-top" id="side-menu">
+                    <h1 class="d-none d-lg-block">Navigation</h1>
+                    <ul>
+                        <li class="link">
+                            <a href="index.html">
+                                <i class="fa fa-th" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Tableau de bord</span>
+                            </a>
+                        </li>
+        
+                        <li class="link">
+                            <a href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Article</span>
+                                <span class="badge badge-success pull-right d-none d-lg-block">20</span>
+                            </a>
+                            <ul class="collapse collapseable" id="collapse-post">
+                                <li>
+                                    <a href="new-article.html">Nouvel article</a>
+                                </li>
+                                <li>
+                                    <a href="articles.html">Mes articles</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="link">
+                            <a href="#collapse-comments" data-toggle="collapse" aria-controls="collapse-coments">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Commentaires</span>
+                            </a>
+                            <ul class="collapse collapseable" id="collapse-comments">
+                                <li>
+                                    <a href="approved.html">Approuvés
+                                        <span class="badge badge-success pull-right d-none d-lg-block">10</span>
+                                    </a>
+                                </li>
+        
+                                <li>
+                                    <a href="approved.html">Désapprouvés
+                                        <span class="badge badge-warning pull-right d-none d-lg-block">10</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="link">
+                            <a href="commenters.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Rédacteurs</span>
+                            </a>
+                        </li>
+        
+                        <li class="link active">
+                            <a href="tags.html">
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Tags</span>
+                            </a>
+                        </li>
+        
+                        <li class="link settings-btn">
+                            <a href="settings.html">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                <span class="d-none d-md-block">Paramètres</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- main content area -->
+                <div class="col-md-10 col-sm-11 display-table-cell valing-top box">
+                    <header class="row clearfix" id="nav-header">
+                        <div class="col-sm-5">
+                            <div class="navbar-default pull-left">
+        
+                                <!-- ICI : BOUTON HAMBURGER POUR LE RESPONSIVE -->
+                            </div>
+                            <input type="text" class="d-none d-lg-block" id="header-search-field" placeholder="Rechercher...">
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="pull-right">
+                                <li id="welcome" class="d-none d-sm-block" >Bienvenue sur votre admin</li>
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <!-- <i class="fa fa-warning" aria-hidden="true">3</i> -->
+                                        <span class="badge badge-warning" aria-hidden="true">3</span>
+                                    </a>
+                                </li>
+                                <li class="fixed-width">
+                                    <a href="#">
+                                        <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                                        <!-- <i class="fa fa-comment" aria-hidden="true">3</i> -->
+                                        <span class="badge badge-success" aria-hidden="true">3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="logout">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Quitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                        
+                <div class="row">
+                    <div class="col-md-4 dashboard-left-cell">
+                        <div class="admin-content-con">
+                            <header>
+                                <h5>Créer des tags</h5>
+                            </header>
+
+                            <form action="">
+                                <div class="form-group">
+                                    <label>Ajoutez vos tags ci-dessous en séparant par des virgules</label>
+                                    <p>
+                                        <textarea class="form-control" name="" id="" rows="3" placeholder="flash, anecdote, shoot, définition, musique"></textarea>
+                                    </p>
+                                    <p>
+                                        <button type="button" class="btn btn-large btn-block btn-primary btn-default btn-sm">Enregistrer les tags</button>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 dashboard-right-cell">
+                        <div class="admin-content-con">
+                            <header>
+                                <h5>Tags</h5>
+                            </header>
+
+                            <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Statut</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">anecdote</th>
+                                    <td>
+                                        <span class="badge badge-success">utilisé</span>
+                                    </td>
+                                    <td>il y a 2 jours</td>
+                                    <td>
+                                        <a href="#"><span class="badge badge-warning">éditer</span></a>
+                                        <a href="#" class="disabled"><span class="badge badge-danger">supprimer</span></a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">musique</th>
+                                    <td>
+                                        <span class="badge badge-dark">non utilisé</span>
+                                    </td>
+                                    <td>il y a 4 jours</td>
+                                    <td>
+                                        <a href="#"><span class="badge badge-warning">éditer</span></a>
+                                        <a href="#" class="disabled"><span class="badge badge-danger">supprimer</span></a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <footer id="admin-footer" class="clearfix">
+                        <div class="pull-left"><b>Copyright </b>&copy; 2018</div>
+                        <div class="pull-right">admin system</div>
+                    </footer>
+                </div>
+        </div>
+            </div>
+        </div>
+
+	<!--**************** SCRIPTS ****************-->
+
+	<!-- <script type="javascript" src="../js/script.js"></script> -->
+
+
+	<!-- MD Bootstrap  -->
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+	<!--**************** /SCRIPTS ****************-->
+
+	</body>
+</html>

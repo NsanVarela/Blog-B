@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Désapprouvés</title>
+
+    <!--**************** CSS ****************-->
+
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/comments.css" />
+
+
+
+    <!--**************** Links ****************-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- MD Bootstrap 4.5.4 -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+    
+    <!--**************** /Links ****************-->
+
+</head>
+
+	<body>
+
+
+			<div class="container-fluid display-table">
+				<div class="row display-table-row">
+					<!-- side menu -->
+					<div class="col-md-2 col-sm-1 d-none d-md-block display-table-cell valing-top" id="side-menu">
+						<h1 class="d-none d-lg-block">Navigation</h1>
+						<ul>
+							<li class="link">
+								<a href="index.html">
+									<i class="fa fa-th" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Tableau de bord</span>
+								</a>
+							</li>
+			
+							<li class="link">
+								<a href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
+									<i class="fa fa-list-alt" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Article</span>
+									<span class="badge badge-success pull-right d-none d-lg-block">20</span>
+								</a>
+								<ul class="collapse collapseable" id="collapse-post">
+									<li>
+										<a href="new-article.html">Nouvel article</a>
+									</li>
+									<li>
+										<a href="articles.html">Mes articles</a>
+									</li>
+								</ul>
+							</li>
+			
+							<li class="link active">
+								<a href="#collapse-comments" data-toggle="collapse" aria-controls="collapse-coments">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Commentaires</span>
+								</a>
+								<ul class="collapse collapseable" id="collapse-comments">
+									<li>
+										<a href="approved.html">Approuvés
+											<span class="badge badge-success pull-right d-none d-lg-block">10</span>
+										</a>
+									</li>
+			
+									<li>
+										<a href="unapproved.html">Désapprouvés
+											<span class="badge badge-warning pull-right d-none d-lg-block">10</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+			
+							<li class="link">
+								<a href="commenters.html">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Rédacteurs</span>
+								</a>
+							</li>
+			
+							<li class="link">
+								<a href="tags.html">
+									<i class="fa fa-tags" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Tags</span>
+								</a>
+							</li>
+			
+							<li class="link settings-btn">
+								<a href="settings.html">
+									<i class="fa fa-cog" aria-hidden="true"></i>
+									<span class="d-none d-md-block">Paramètres</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- main content area -->
+					<div class="col-md-10 col-sm-11 display-table-cell valing-top box">
+						<header class="row clearfix" id="nav-header">
+							<div class="col-sm-5">
+								<div class="navbar-default pull-left">
+			
+									<!-- ICI : BOUTON HAMBURGER POUR LE RESPONSIVE -->
+								</div>
+								<input type="text" class="d-none d-lg-block" id="header-search-field" placeholder="Rechercher...">
+							</div>
+							<div class="col-sm-7">
+								<ul class="pull-right">
+									<li id="welcome" class="d-none d-sm-block" >Bienvenue sur votre admin</li>
+									<li class="fixed-width">
+										<a href="#">
+											<i class="fa fa-bell" aria-hidden="true"></i>
+											<!-- <i class="fa fa-warning" aria-hidden="true">3</i> -->
+											<span class="badge badge-warning" aria-hidden="true">3</span>
+										</a>
+									</li>
+									<li class="fixed-width">
+										<a href="#">
+											<i class="fa fa-envelope-open" aria-hidden="true"></i>
+											<!-- <i class="fa fa-comment" aria-hidden="true">3</i> -->
+											<span class="badge badge-success" aria-hidden="true">3</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="logout">
+											<i class="fa fa-sign-out" aria-hidden="true"></i>
+											Quitter
+										</a>
+									</li>
+								</ul>
+							</div>
+						</header>
+			
+							<div id="content">
+								<header class="clearfix">
+									<h2 class="page_title pull-left">Commentaires approuvés</h2>
+									<button type="button" class="btn btn-default btn-sm pull-right">Nouvel article</button>
+								</header>
+			
+								<div class="content-inner">
+									<div class="row search-row">
+										<div class="col-md-12">
+											<div class="input-group">
+												<input type="text" class="form-control search-field" id="search" placeholder="Rechercher">
+												<span class="input-group-btn">
+													<button type="button" class="btn btn-default go">Go!</button>
+												</span>
+											</div>
+										</div>
+                                    </div>
+                                    
+                                    <div class="row comments-row">
+                                        <div class="col-sm-2 col-md-1">
+                                            <img class="rounded d-none d-sm-block" src="https://api.fnkr.net/testimg/70x70/00CED1/FFF/?text=70x70">
+                                        </div>
+                                        <div class="col-sm-10 col-md-11">
+                                            <div class="row">
+                                                <div class="col-xs-9 col-sm-10 col-md-9">
+                                                    <b>Nom utilisateur</b> a laissé un commentaire sur <b>How all things are made...</b><br>
+                                                    <small>Aujourd'hui à 18h19 - 05/07/2018</small> 
+                                                </div>
+
+                                                <div class="col-xs-3 col-sm-2 col-md-3">
+                                                    <div class="clearfix">
+                                                        <div class="pull-right comment-age">Il y a 2 jours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card card-inverse card-text comments-well" style="background-color: #eeeeee; border-color: #eeeeee;">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Ipsum dicta eaque optio hic nobis voluptas veritatis, voluptatum iure sed.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="pull-right">
+                                                    <a class="btn btn-sm btn-default" id="approved-comment" href="#" role="button">
+                                                        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&nbsp;Approuver
+                                                    </a>
+                                                    <a class="btn btn-sm btn-default" id="remove-comment" href="#" role="button">
+                                                        <i class="fa fa-remove" aria-hidden="true"></i>&nbsp;Supprimer
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row comments-row">
+                                        <div class="col-sm-2 col-md-1">
+                                            <img class="rounded d-none d-sm-block" src="https://api.fnkr.net/testimg/70x70/00CED1/FFF/?text=70x70">
+                                        </div>
+                                        <div class="col-sm-10 col-md-11">
+                                            <div class="row">
+                                                <div class="col-xs-9 col-sm-10 col-md-9">
+                                                    <b>Nom utilisateur</b> a laissé un commentaire sur <b>How all things are made...</b><br>
+                                                    <small>Aujourd'hui à 18h19 - 05/07/2018</small> 
+                                                </div>
+
+                                                <div class="col-xs-3 col-sm-2 col-md-3">
+                                                    <div class="clearfix">
+                                                        <div class="pull-right comment-age">Il y a 2 jours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card card-inverse card-text comments-well" style="background-color: #eeeeee; border-color: #eeeeee;">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Ipsum dicta eaque optio hic nobis voluptas veritatis, voluptatum iure sed.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="pull-right">
+                                                    <a class="btn btn-sm btn-default" id="approved-comment" href="#" role="button">
+                                                        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&nbsp;Approuver
+                                                    </a>
+                                                    <a class="btn btn-sm btn-default" id="remove-comment" href="#" role="button">
+                                                        <i class="fa fa-remove" aria-hidden="true"></i>&nbsp;Supprimer
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+								</div>
+							</div>
+			
+							<div class="row">
+								<footer id="admin-footer" class="clearfix">
+									<div class="pull-left"><b>Copyright </b>&copy; 2018</div>
+									<div class="pull-right">admin system</div>
+								</footer>
+							</div>
+					</div>
+			
+				</div>
+			</div>
+
+	<!--**************** SCRIPTS ****************-->
+
+	<!-- <script type="javascript" src="../js/script.js"></script> -->
+
+
+	<!-- MD Bootstrap  -->
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+	<!--**************** /SCRIPTS ****************-->
+
+	</body>
+</html>

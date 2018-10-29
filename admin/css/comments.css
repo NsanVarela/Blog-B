@@ -1,0 +1,35 @@
+.comments-row {
+    margin-bottom: 30px;
+}
+
+.comment-age {
+    font-size: 12px;
+}
+
+.comments-well {
+    margin-top: 10px;
+}
+
+#approved-comment {
+    color: #676a6c!important;
+    border: 1px #eee solid !important;
+    background-color: white !important;
+}
+
+#approved-comment:hover {
+    color: #676a6c!important;
+    border: 1px #eee solid !important;
+    background-color: white !important;
+}
+
+#remove-comment {
+    color: #676a6c!important;
+    border: 1px #eee solid !important;
+    background-color: white !important;
+}
+
+#remove-comment:hover {
+    color: #676a6c!important;
+    border: 1px #eee solid !important;
+    background-color: white !important;
+}

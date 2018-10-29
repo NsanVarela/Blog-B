@@ -1,0 +1,243 @@
+h2 {
+     font-family: Roboto;
+ }
+ .containerArgot {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 645px;
+    background-color: white;
+    opacity: 0.9;
+}
+.bloc_letters {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.col-sm-4 {
+    min-height: 0px!important;
+}
+/***********************
+    Letters animation
+***********************/
+
+.caseLetter {
+    background-color: white;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    border: solid 5px black;
+}
+.caseLetter a {
+    color: black;
+}
+.caseLetter a:hover {
+    color: white;
+}
+.caseLetter:hover {
+    background-color: black;
+    color: white;
+}
+.caseLetter.none{
+    background-color: black;
+
+}
+.caseLetter h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+/***********************
+    Words animation 
+***********************/
+
+.argot_word {
+    color: white;
+    z-index: 2;
+}
+.argot_word h4 {
+    font-size: 20px;
+    padding-top: 5px;
+}
+.argot_def {
+    display: none;
+}
+.argot_def p {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    width: 550px;
+    height: 150px;
+    text-align: center;
+    padding: 40px 30px;
+}
+#activeWord h4.animate {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+}
+.bloc_definitions {
+    margin-left: 70px!important;
+}
+
+/***********************
+ List letters left side 
+***********************/
+
+/* .argot_letters.col-sm-12 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 680px;
+} */
+.left_letters {
+    padding-right: 100%;
+    padding-left: 25px;
+    position: absolute;
+    top: 60px;
+    left: 13px;
+    z-index: 1;
+}
+.argot_letters h2 {
+    font-size: 12px;
+    color: gray;
+    display: none;
+}
+.argot_letters.i h2 {
+    margin-left: 2px;
+}
+.argot_letters a:hover h2  {
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* Small devices (landscape phones, 576px and less) */
+@media (max-width: 576px) {
+    .containerArgot {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 645px;
+        background-color: white;
+        opacity: 0.9;
+    }
+    .caseLetter {
+        max-height: 8%;
+    }
+    .caseLetter h2 {
+        font-size: 20px;
+    }
+    .bloc_letters {
+        max-height: 646px;
+        overflow-y: scroll;
+    }
+    .none {
+        display: none;
+    }
+    .bloc_definitions {
+        margin-left: 60px!important;
+    }
+    .bloc_definitions .argot_word h4 {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    .argot_def {
+        max-width: 80%;
+    }
+    .argot_def p {
+        font-size: 12px;
+        width: 100%;
+        height: auto;
+    }
+    .left_letters {
+        padding-right: 100%;
+        padding-left: 10px;
+    }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    .argot_word h4 {
+        font-size: 12px;
+    }
+    .argot_def {
+        width: 270%;
+        height: auto;
+    }
+    .argot_def p {
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+    }
+    #activeWord h4.animate {
+        font-size: 16px;
+    }
+    .left_letters {
+        left: 0px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .argot_word h4 {
+        font-size: 14px;
+    }
+    .argot_def {
+        width: 270%;
+        height: auto;
+    }
+    .argot_def p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+    #activeWord h4.animate {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .argot_word h4 {
+        font-size: 16px;
+    }
+    .argot_def {
+        width: 270%;
+        height: auto;
+    }
+    .argot_def p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+    #activeWord h4.animate {
+        font-size: 16px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .argot_word h4 {
+        font-size: 18px;
+    }
+    .argot_def {
+        width: 270%;
+        height: auto;
+    }
+    .argot_def p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+    #activeWord h4.animate {
+        font-size: 18px;
+    }
+}

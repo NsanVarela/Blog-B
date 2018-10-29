@@ -1,0 +1,21 @@
+.form-wrapper {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.note-editable {
+    background-color: white;
+}
+
+.info {
+    color: #766a6c;
+}
+
+.chosen-container, .chosen-container-multi {
+    width: 100% !important;
+}
+@media (min-width: 768px){
+    .col-md-2 {
+        max-width: 100%!important;
+    }
+}
